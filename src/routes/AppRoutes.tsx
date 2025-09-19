@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import type { ReactElement } from "react";
+import { authRoutes } from "./auth.routes";
 
 // Interface com suporte a rotas aninhadas
 export interface AppRoute {
@@ -12,7 +13,7 @@ export interface AppRoute {
 // Exemplo de importação de rotas
 // import { colaboradoresRoutes } from "@/routes/colaboradores.routes";
 
-const allRoutes: AppRoute[] = [];
+const allRoutes: AppRoute[] = [...authRoutes];
 
 export const AppRoutes: React.FC = () => {
   return (

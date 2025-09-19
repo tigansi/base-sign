@@ -7,7 +7,7 @@ export const theme = createTheme({
   },
   palette: {
     background: {
-      default: "#eeeeee", // mesma cor que você foi colacado no CSS
+      default: "#eeee", // mesma cor que você foi colacado no CSS
     },
   },
 });
